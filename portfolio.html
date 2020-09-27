@@ -52,7 +52,13 @@
             transform: translate(-50%, -50%);
         }
         main {
-            height: 100%;
+            min-height: 100%;
+        }
+        
+        .carousel-indicators {
+        top: 0px;
+        }   
+         
         }
     </Style>
 </head>
@@ -78,7 +84,7 @@
         </nav>
     </Nav>
 
-    <Main class=container-fliud>
+    <Main class=container>
 <!-- added bootstrap carousel-->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -88,13 +94,16 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="http://via.placeholder.com/640x360
+                " class="d-block w-100" alt="placeholder img">
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="https://www.fillmurray.com/640/360
+                " class="d-block w-100" alt="placeholder img">
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="https://dummyimage.com/640x360/fff/aaa
+                " class="d-block w-100" alt="placeholder img">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

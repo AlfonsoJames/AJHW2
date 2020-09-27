@@ -12,30 +12,49 @@
     <Style>
         body {
             /* background-color: rgb(196, 192, 164); */
-            background-image: linear-gradient(rgb(202, 202, 202),rgb(221, 221, 219));
+            background-image: linear-gradient(rgb(202, 202, 202),rgb(89, 133, 151));
+            height: 100%;
             /* float: left; */
         }
         nav {
             background-color: gray;
         }
-        /* section {
-            float: center;
-            height: 100%; */
-        /* } */
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(66, 66, 66);
+            color: white;
+            text-align: center;
+        }
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            display: inline-block; /* remove extra space below image */
+            padding-top: 15%; padding-bottom: 15%;
+        }
+        article {
+            padding-right: 5%;
+        }    
+        center { 
+            height: 200px;
+            position: relative;
+            border: 3px solid green;
+        }
+
+        center p {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
         main {
             height: 100%;
         }
-        Footer {
-            float: center;
-            background-color: slategray;
-        }
-        /* p {
-            float: center;
-        }
-        button {
-            float: right;
-            max-height: 30px;
-        } */
     </Style>
 </head>
 
@@ -60,7 +79,7 @@
         </nav>
     </Nav>
     
-    <Main class="container-sm">
+    <Main class="container-fluid">
         <!-- <div class="row">
             <div class="col-12">
             <p>
@@ -91,9 +110,9 @@
         
     </Main>
     <footer>
-        <span>
-        
-        </span>
+        <p>
+            <em>"Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our Light, not our Darkness, that most frightens us."</em> -Marianne Williamson
+        </p>
     </footer>
     
     <!-- <script>

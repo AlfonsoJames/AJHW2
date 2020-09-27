@@ -8,47 +8,41 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>Home Page</title>
-
+<!-- added custom Styles -->
     <Style>
-        body {
-            /* background-color: rgb(196, 192, 164); */
-            background-image: linear-gradient(rgb(202, 202, 202),rgb(89, 133, 151));
-            /* float: left; */
+        
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(66, 66, 66);
+            color: white;
+            text-align: center;
         }
-        nav {
-            background-color: gray;
-        }
-        Footer {
-            float: center;
-            background-color: slategray;
-        }
+        /* nav {
+            position: fixed;
+        } */
         img{
             max-width: 100%;
             max-height: 100%;
-            display: inline-block; /* remove extra space below image */
+            display: inline-block; 
             padding-top: 15%; padding-bottom: 15%;
         }
         article {
             padding-right: 5%;
         }    
-        center { 
-            height: 200px;
-            position: relative;
-            border: 3px solid green;
-        }
-
-        center p {
-            margin: 0;
+        main {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            width: 100%;
+            min-height: 100%;
         }
     </Style>
 </head>
 
 <body>
+
+<!-- Bootstrap Nav bar -->
     <Nav>
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg p-3 mb-5">
             <a class="navbar-brand" href="#">Alfonso James</a>
@@ -62,32 +56,38 @@
                         <a class="nav-link" href="contact.html"> Contact <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="portfolio.html"> Portfolio </a>
                     </li>
                </ul>
             </div>
         </nav>
     </Nav>
-    
+<!-- Bootstrap grid for main-->
     <Main>
-        <div class="row">
-            <section class="col-5">
-                <img src="C:\Users\dpalf\OneDrive\Desktop\Head.jpg" alt="Alfonso James">
-            </section>
-            <article class=col-7>
-                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, tenetur. Nam, facere natus sit vel quidem cum libero inventore at odio commodi ea expedita minima culpa repudiandae. Voluptatum, et qui. <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae minus modi sit corporis voluptates corrupti dolorum aut soluta incidunt accusamus, ipsa veniam aliquid ea libero nemo explicabo vero iusto. <br>
-                </p>
+        <Section class="container">
+            <div class="row">
+                <section class="col-5">
+                    <img src="C:\Users\dpalf\OneDrive\Desktop\Head.jpg" alt="Alfonso James">
+                </section>
+                <article class=col-7>
+                    <div class="row"> </div>
+                    <p class="center row">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, tenetur. Nam, facere natus sit vel quidem cum libero inventore at odio commodi ea expedita minima culpa repudiandae. Voluptatum, et qui. <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae minus modi sit corporis voluptates corrupti dolorum aut soluta incidunt accusamus, ipsa veniam aliquid ea libero nemo explicabo vero iusto. <br>
+                    </p>
 
-            </article>
-        </div>
-
+                </article>
+            </div>
+        </Section>
     </Main>
- 
+ <!-- sticky Footer -->
+    <footer>
+        <p>
+            <em>"Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our Light, not our Darkness, that most frightens us."</em> -Marianne Williamson
+        </p>
+    </footer>
+    <!-- <script>
 
-    <script>
-
-    </script>
+    </script> -->
     
 </body>
 </html>
